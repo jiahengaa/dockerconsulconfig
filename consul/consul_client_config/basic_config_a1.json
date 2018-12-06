@@ -1,0 +1,28 @@
+{
+    "datacenter": "dc1",
+    "log_level": "INFO",
+    "node_name": "ca1",
+    "server": false,
+    "bind_addr": "0.0.0.0",
+    "client_addr": "0.0.0.0",
+    "ui": false,
+    "ports": {
+        "dns": 8600,
+        "http": 8500,
+        "https": -1,
+        "server": 8300,
+        "serf_lan": 8301,
+        "serf_wan": 8302
+    },
+    "rejoin_after_leave": true,
+    "retry_join": [
+       "172.18.0.2",
+        "172.18.0.3",
+        "172.18.0.4",
+	"172.18.0.5",
+	"172.18.0.6"
+    ],
+    "retry_interval": "30s",
+    "reconnect_timeout": "72h"
+
+}
